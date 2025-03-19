@@ -1,0 +1,46 @@
+body{
+    box-sizing: border-box;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+}
+li, a, button{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+header{
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: black;
+    padding: 20px 15px;
+}
+.logotipo{
+    font-family: "Teko", serif;
+    font-size: 32px;
+    color: #fff;
+}
+.nav-links{
+    list-style: none;
+    & li{
+        display: inline-block;
+        padding: 0px 20px;
+        & a:hover{
+            color: #6090d7;
+        }
+    }
+}
+button{
+    background-color: #6090d7;
+    border: 12pxpx;
+    border-color: #04419c;
+    border-radius: 60px;
+    padding: 8px;
+    cursor: pointer;
+    width: 120px;
+}
+button:hover{
+    background-color: #337be8;
+}
