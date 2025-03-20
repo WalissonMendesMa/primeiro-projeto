@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <title>Tarefas do Dia</title>
 </head>
 <body>
@@ -15,29 +16,55 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><button>login</button></li>
+                <li><button class="btn-default">login</button></li>
             </ul>
         </nav>
     </header>
-    <div class="content">
-        <h2>Suas Tarefas na palma da sua mão!</h2>
-        <p>salve suas tarefas de forma facil e simples, para nunca esquecer de realiza-las</p>
-    </div>
-    <div class="cadastroUsuario">
-        <form>
-            <div>
-                <label>Nome:</label>
-                <input type="text">
+    <div id="sign-up">
+        <div id="content">
+                <h2 id="content-title">SUAS TAREFAS NA PALMA DA SUA MÃO</h2>
+                <p>salve suas tarefas de forma facil e simples, para nunca esquecer de realiza-las</p>
+        </div>
+        <main id="form_container">
+            <div id="form_header">
+                <h2 id="form_title">Nova conta</h2>
             </div>
-            <div>
-                <label>senha:</label>
-                <input type="password">
-            </div>
-            <div>
-                <label>data nascimento:</label>
-                <input type="date">
-            </div>
-        </form>
+            <form action="" id="form">
+                <div id="input_container">
+                    <div class="input-box">
+                        <label for="name" class="form_label">Nome Completo</label>
+                        <div class="input-field">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Nome">
+                        </div>
+                    </div>
+                </div>
+                <div id="input_container">
+                    <div class="input-box">
+                        <label for="email" class="form_label">Insira seu email</label>
+                        <div class="input-field">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="exemplo@email.com">
+                        </div>
+                    </div>
+                </div>
+                <div id="input_container">
+                    <div class="input-box">
+                        <label for="password" class="form_label">Crie uma senha</label>
+                        <div class="input-field">
+                            <input type="password" name="password" id="password" class="form-control" placeholder="********">
+                        </div>
+                    </div>
+                </div>
+                <div id="input_container">
+                    <div class="input-box">
+                        <label for="name" class="form_label">Confirme sua senha</label>
+                        <div class="input-field">
+                            <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="********">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn-default">Criar conta</button>
+            </form>
+        </main>
     </div>
 </body>
 </html>
